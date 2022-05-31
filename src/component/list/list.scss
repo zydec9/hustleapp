@@ -1,0 +1,35 @@
+.list-container {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.list-inner {
+    margin-top: 2em;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .list-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .list-form-input-button{
+            display: flex;
+
+        }
+    }
+
+    .list-buttons{
+        margin: 2em;
+    }
+}
