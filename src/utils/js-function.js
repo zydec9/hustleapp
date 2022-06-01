@@ -13,6 +13,8 @@ export const saveNote = (note) => {
 
 export const timerInMinutesAndSeconds = (timer) => {
 
+
+
     let min = `${Math.floor(timer / 60)}`
     let sec = `${(Math.floor(((timer / 60) - min) * 60) * 1000) / 1000}`
 
@@ -58,3 +60,33 @@ export const headerClicked = (componentOpen) => {
     }
 
 }
+
+const addPopup = () => {
+    const popup = document.querySelector('.timer-popup-container')
+    popup.classList.add('time-up')
+}
+
+export const endOfTimer = () => {
+
+  
+  
+    const main = document.querySelector('.main-container')
+    main.style.opacity = 0.2
+
+
+    setTimeout(() => {
+        main.style.opacity = 0.6
+        document.body.style.backgroundColor = 'lightblue'
+    }, 150)
+    addPopup()
+}
+
+
+export const removePopup = () => {
+    const popup = document.querySelector('.timer-popup-container')
+    popup.classList.remove('time-up')
+    const main = document.querySelector('.main-container')
+    main.style.opacity = 1
+    document.body.style.backgroundColor = 'white'
+}
+

@@ -8,7 +8,7 @@ const Home = () => {
 
         <div className='home-container container'>
 <div className="home-inner">
-    home
+    <h1>Hustle Till You Drop</h1>
 </div>
         </div>
     )

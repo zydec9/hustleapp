@@ -1,0 +1,31 @@
+.timer-popup-container {
+    border: 2px solid black;
+    text-align: center;
+    width: 200px;
+    padding: 1rem;
+    background-color: lightgray;
+    border-radius: .5rem;
+
+    position: absolute;
+    transition: all 400ms;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    top: -100%;
+    left: 50%;
+    z-index: 2;
+
+    h2 {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+.timer-popup-container.time-up {
+
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
